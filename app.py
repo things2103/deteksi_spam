@@ -116,25 +116,25 @@ tfidf = TfidfVectorizer(
 MODEL_DIR = "models/"  # folder model di repo
 
 models_cv3 = {
-    "NB Baseline": "cv3_nb_baseline.pkl",
-    "SVM Baseline": "cv3_svm_baseline.pkl",
-    "NB Tuned": "cv3_nb_tuned.pkl",
-    "SVM Tuned": "cv3_svm_tuned.pkl",
-    "Ensemble Hard Baseline": "cv3_ensemble_hard_baseline.pkl",
-    "Ensemble Soft Baseline": "cv3_ensemble_soft_baseline.pkl",
-    "Ensemble Hard Tuned": "cv3_ensemble_hard_tuned.pkl",
-    "Ensemble Soft Tuned": "cv3_ensemble_soft_tuned.pkl"
+    "NB Baseline": "nb_baseline_3.pkl",
+    "SVM Baseline": "svm_baseline_3.pkl",
+    "NB Tuned": "nb_tuned_3.pkl",
+    "SVM Tuned": "svm_tuned_3.pkl",
+    "Ensemble Hard Baseline": "ensemble_hard_baseline_3.pkl",
+    "Ensemble Soft Baseline": "ensemble_soft_baseline_3.pkl",
+    "Ensemble Hard Tuned": "ensemble_hard_tuned_3.pkl",
+    "Ensemble Soft Tuned": "ensemble_soft_tuned_3.pkl"
 }
 
 models_cv5 = {
-    "NB Baseline": "cv5_nb_baseline.pkl",
-    "SVM Baseline": "cv5_svm_baseline.pkl",
-    "NB Tuned": "cv5_nb_tuned.pkl",
-    "SVM Tuned": "cv5_svm_tuned.pkl",
-    "Ensemble Hard Baseline": "cv5_ensemble_hard_baseline.pkl",
-    "Ensemble Soft Baseline": "cv5_ensemble_soft_baseline.pkl",
-    "Ensemble Hard Tuned": "cv5_ensemble_hard_tuned.pkl",
-    "Ensemble Soft Tuned": "cv5_ensemble_soft_tuned.pkl"
+    "NB Baseline": "nb_baseline_5.pkl",
+    "SVM Baseline": "svm_baseline_5.pkl",
+    "NB Tuned": "nb_tuned_5.pkl",
+    "SVM Tuned": "svm_tuned_5.pkl",
+    "Ensemble Hard Baseline": "ensemble_hard_baseline_5.pkl",
+    "Ensemble Soft Baseline": "ensemble_soft_baseline_5.pkl",
+    "Ensemble Hard Tuned": "ensemble_hard_tuned_5.pkl",
+    "Ensemble Soft Tuned": "ensemble_soft_tuned_5.pkl"
 }
 
 cv_choice = st.selectbox("Pilih CV:", ["CV 3", "CV 5"])
