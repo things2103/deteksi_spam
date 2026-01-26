@@ -30,7 +30,7 @@ st.set_page_config(
 )
 
 st.title("📧 Deteksi Email Spam")
-st.write("Pilih CV, model, masukkan teks email, lalu prediksi spam/ham.")
+st.write("Pilih CV, model, masukkan pesan/isi email, lalu prediksi spam/ham.")
 
 # =======================
 # Download stopwords NLTK
@@ -149,15 +149,15 @@ else:
 # =======================
 # Input email
 # =======================
-st.subheader("Masukkan teks email:")
-email_input = st.text_area("Ketik email di sini:")
+st.subheader("Masukkan pesan/isi email:")
+email_input = st.text_area("Ketik pesan/isi email di sini:")
 
 # =======================
 # Tombol Prediksi
 # =======================
 if st.button("📧 Prediksi Spam/Ham"):
     if not email_input.strip():
-        st.warning("Masukkan teks email terlebih dahulu!")
+        st.warning("Masukkan pesan/isi email terlebih dahulu!")
         st.stop()
 
     word_count = len(email_input.strip().split())
